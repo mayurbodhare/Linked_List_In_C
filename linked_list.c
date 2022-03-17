@@ -1,14 +1,14 @@
 #include<stdio.h>
 #include<conio.h>
 #include<stdlib.h>
-
+//defining the structure
 struct node{
 	int data;
 	struct node *next;
 };
-
+// START is global Variable
 struct node *START=NULL;
-
+// createNode will allocate memory
 struct node* createNode(){
 	struct node *n;
 	n=(struct node*) malloc(sizeof(struct node));
